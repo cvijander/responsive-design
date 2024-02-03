@@ -37,6 +37,10 @@ body {
     .col {
         width: 50%;
     }
+
+    section .col:nth-of-type(2n+1){
+        clear: both;
+    }
 }
 
 @media (min-width: 992px){
@@ -47,6 +51,14 @@ body {
     .col {
         width: 33.33%;
     }
+
+     section .col:nth-of-type(2n+1){
+        clear:none;
+    }
+
+    section .col:nth-of-type(3n+1){
+        clear: both;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -55,5 +67,16 @@ body {
     }
     .col {
         width: 25%;
+    }
+ section .col:nth-of-type(2n+1){
+        clear: none;
+    }
+
+    section .col:nth-of-type(3n+1){
+        clear: none;
+    }
+
+    section .col:nth-last-of-type(4n+1){
+        clear: both;
     }
 }
